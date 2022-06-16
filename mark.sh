@@ -40,6 +40,10 @@ else
      exit
 fi
 
+echo "现在可以打开 $filename_without_suffix.md 手动处理文件"
+read -s -n1 -p "处理完成后按任意键继续 ... "
+echo ""
+
 #进入输出路径的文件夹
 cd $OUTPUT_PATH
 
